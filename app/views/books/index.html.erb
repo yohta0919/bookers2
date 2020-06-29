@@ -6,11 +6,15 @@
             <table class='table'>
               <tr><%= attachment_image_tag current_user, :profile_image, :fill,100,100,format: 'jpeg', class: " pull-left profile-img", fallback: "no_image.jpg" %></tr> 
                 <th>name</th>
-                <th>aa</th>
+                <th>
+                  <%= current_user.name %>
+                  </th>
               </tr>
               <tr>
                 <th>introduction</th>
-                <th></th>
+                <th>
+                  <%= current_user.introduction %>
+                  </th>
               </tr>
             </table>
             <div class='row'>
